@@ -1,0 +1,16 @@
+#!/usr/bin/env perl
+#
+use 5.010;
+
+use warnings;
+use strict;
+use App::Clif;
+
+sub cmd {
+    my $clif = shift;
+    for( @{clif($clif)} ){
+    say "\n". colored(['bright_black on_grey3'],"   ") . colored(['grey15']," $_->{$get}->{summary}") . "\n" . colored(['grey7'],$_->{$get}->{command}) . "\n\n"; 
+    }
+}
+cmd(\@ARGV);
+
