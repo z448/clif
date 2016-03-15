@@ -11,7 +11,7 @@ use Term::ANSIColor;
 my $cmd = sub {
     my $get = shift;
     for( @{clif($get)} ){
-    say "\n". colored(['bright_black on_grey3'],"   ") . colored(['grey15']," $_->{$get}->{summary}") . "\n" . colored(['grey7'],$_->{$get}->{command}) . "\n"; 
+    say "\n". colored(['bright_black on_grey3 bright_black on_grey3'],"###") . colored(['grey15']," $_->{$get}->{summary}") . "\n" . colored(['grey7'],$_->{$get}->{command}) . "\n"; 
     }
 };
 
