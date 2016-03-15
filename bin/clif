@@ -5,12 +5,16 @@ use 5.010;
 use warnings;
 use strict;
 use App::Clif;
+use Term::ANSIColor;
 
-sub cmd {
-    my $clif = shift;
-    for( @{clif($clif)} ){
-    say "\n". colored(['bright_black on_grey3'],"   ") . colored(['grey15']," $_->{$get}->{summary}") . "\n" . colored(['grey7'],$_->{$get}->{command}) . "\n\n"; 
+
+my $cmd = sub {
+    my $get = shift;
+    for( @{clif($get)} ){
+    say "\n". colored(['bright_black on_grey3'],"   ") . colored(['grey15']," $_->{$get}->{summary}") . "\n" . colored(['grey7'],$_->{$get}->{command}) . "\n"; 
     }
-}
-cmd(\@ARGV);
+};
+
+my $req = $ARGV[0];
+$cmd->($req);
 

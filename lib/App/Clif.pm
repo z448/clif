@@ -4,7 +4,6 @@ use 5.006;
 use strict;
 use warnings;
 use JSON::Tiny qw( decode_json encode_json );
-use Term::ANSIColor;
 
 BEGIN {
     require Exporter;
@@ -35,15 +34,13 @@ my $cli = sub {
 
 
 sub clif {
-    my( $get, $cut ) = @_;
-    if ($cut){
-        $cut = qr/$cut/;
-    } else { $cut = qr/./ }
+    my( $get )= @_;
+        my $cut = qr/./;
 
     my @cut = grep{ $_->{$get} =~ m/$cut/ } @{$cli->( $get )};
     return \@cut;
 }
-clif(@ARGV);
+
 #source
 __DATA__
 https://gist.githubusercontent.com/z448/3dcb01b979a3b31b7716/raw/17de137a16f80d41c6ff13654550f38504cdd8ce/
