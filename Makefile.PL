@@ -7,11 +7,10 @@ WriteMakefile(
     NAME             => 'App::Clif',
     ABSTRACT         => 'CLI tool to search web sources for cli commands.',
     AUTHOR           => q{z448 <zed448@icloud.com>},
-    VERSION_FROM     => 'lib/App/Clif.pm',
-    ABSTRACT_FROM    => 'lib/App/Clif.pm',
-    DISTNAME         => 'Dancer',
+    VERSION          => '0.01',
+    DISTNAME         => 'App-clif',
     EXE_FILES        => [
-                        'bin/dancer'
+                        'bin/clif'
                     ],
     LICENSE          => 'perl',
     PL_FILES         => {},
