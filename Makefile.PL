@@ -5,10 +5,15 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
     NAME             => 'App::Clif',
+    ABSTRACT         => 'CLI tool to search web sources for cli commands.',
     AUTHOR           => q{z448 <zed448@icloud.com>},
     VERSION_FROM     => 'lib/App/Clif.pm',
     ABSTRACT_FROM    => 'lib/App/Clif.pm',
-    LICENSE          => 'artistic_2',
+    DISTNAME         => 'Dancer',
+    EXE_FILES        => [
+                        'bin/dancer'
+                    ],
+    LICENSE          => 'perl',
     PL_FILES         => {},
     MIN_PERL_VERSION => 5.006,
     CONFIGURE_REQUIRES => {
