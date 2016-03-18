@@ -6,6 +6,7 @@ use warnings;
 use strict;
 use App::Clif qw( clif );
 use Term::ANSIColor;
+use open qw<:encoding(UTF-8)>;
 
 
 my $cmd = sub {
