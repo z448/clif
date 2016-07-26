@@ -1,5 +1,5 @@
 ##clif
-*CLI tool to search web sources for cli commands.*
+*CLI tool to search commandlinfu.com*
 
 ####gif
 
