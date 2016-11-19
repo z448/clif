@@ -3,7 +3,7 @@ package App::Clif;
 use 5.006;
 use strict;
 use warnings;
-use JSON::Tiny qw( decode_json encode_json );
+use JSON::PP;
 use open qw<:encoding(UTF-8)>;
 
 BEGIN {

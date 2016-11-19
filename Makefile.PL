@@ -22,7 +22,7 @@ WriteMakefile(
         'Test::More' => 0,
     },
     PREREQ_PM => {
-        'JSON::Tiny'        => 0.1,
+        'JSON::PP'        => 0.1,
         #'ABC'              => 1.6,
         #'Foo::Bar::Module' => 5.0401,
     },
