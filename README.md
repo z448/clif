@@ -1,12 +1,14 @@
-##clif
-*CLI tool to search commandlinfu.com*
+#NAME
 
-####gif
+**clif** - cli client for searching commandlinefu.com
+
+#GIF
 
 ![clif](https://raw.githubusercontent.com/z448/clif/master/clif.gif)
 
 
-####Install
+#INSTALL
+
 ```bash
 perl Makefile.PL
 make
